@@ -13,9 +13,22 @@
   }
 }
 
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: black;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 22px;
+  border:1px solid black;
+  background:#ecf0f1;
+  padding:5px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +41,107 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper{
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+
+.main{
+  width: 100%;
+}
+
+.main__body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__body__nav{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main__body__nav__left{
+  width: 50%;
+  display: flex;
+  justify-content: start;
+}
+.main__body__nav__right{
+  width: 30%;
+}
+
+.main__body__nav__right ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__body__nav__right ul li{
+  cursor: pointer;
+  width: 50px;
+  height: 20px;
+  transition: 0.5s;
+}
+
+.main__body__nav__right ul li:hover{
+  background-color: #282c34;
+  border-radius: 2px;
+
+  color: white;
+}
+
+.main__body__content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__body__content__item{
+  width: 100%;
+  display: flex;
+}
+
+.main__body__content__table{
+  width: 50%;
+ 
+}
+.main__body__content__graph{
+  width: 50%;
+  margin-bottom: 100px;
+  margin: 0px 10px;
+  text-align: center;
+}
+table{
+  margin-bottom: 100px ;
+  width: 100%;
+}
+
+
+
+.main__body__content__table__title{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+.main__body__content__table__list{
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.main__body__content__graph{
+  width: 50%;
 }
