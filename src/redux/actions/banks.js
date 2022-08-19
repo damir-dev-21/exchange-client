@@ -3,7 +3,7 @@ import {FILTER_DATE, FILTER_EXCHANGE, GET_BANKS,SET_BANKS} from '../actions/acti
 
 export function getBanks(){
     return async (dispatch) => {
-        const responce = await axios.get('http://127.0.0.1:8010/exchanges')
+        const responce = await axios.get('http://94.103.83.34:8010/exchanges')
         const data = responce.data
         let arr = []
         let exchanges = []
